@@ -25,7 +25,7 @@ def create_training_instances(
     valid_cache,
     labels,
 ):
-    # parse annotations of the training set
+    # parse annotations of the training set # TIGER  pascal voc格式
     train_ints, train_labels = parse_voc_annotation(train_annot_folder, train_image_folder, train_cache, labels)
 
     # parse annotations of the validation set, if any, otherwise split the training set
@@ -36,7 +36,7 @@ def create_training_instances(
 
         train_valid_split = int(0.8*len(train_ints))
         np.random.seed(0)
-        np.random.shuffle(train_ints)
+        np.random.shuffle(train_ints) # TIGER 有作 shuffle
         np.random.seed()
 
         valid_ints = train_ints[train_valid_split:]
@@ -45,7 +45,7 @@ def create_training_instances(
     # compare the seen labels with the given labels in config.json
     if len(labels) > 0:
         overlap_labels = set(labels).intersection(set(train_labels.keys()))
-
+        # TIGER  確認 labels
         print('Seen labels: \t'  + str(train_labels) + '\n')
         print('Given labels: \t' + str(labels))
 
@@ -57,9 +57,9 @@ def create_training_instances(
         print('No labels are provided. Train on all seen labels.')
         print(train_labels)
         labels = train_labels.keys()
-
+    # TIGER  
     max_box_per_image = max([len(inst['object']) for inst in (train_ints + valid_ints)])
-
+    # TIGER : train set / val set
     return train_ints, valid_ints, sorted(labels), max_box_per_image
 
 def create_callbacks(saved_weights_name, tensorboard_logs, model_to_save):
@@ -115,7 +115,7 @@ def create_model(
     class_scale  
 ):
     if multi_gpu > 1:
-        with tf.device('/cpu:0'):
+        with tf.device('/cpu:0'):       # TIGER
             template_model, infer_model = create_yolov3_model(
                 nb_class            = nb_class, 
                 anchors             = anchors, 
@@ -193,8 +193,8 @@ def _main_(args):
         downsample          = 32, # ratio between network input's size and network output's size, 32 for YOLOv3
         max_box_per_image   = max_box_per_image,
         batch_size          = config['train']['batch_size'],
-        min_net_size        = config['model']['min_input_size'],
-        max_net_size        = config['model']['max_input_size'],   
+        min_net_size        = config['model']['min_input_size'], # tiger 608
+        max_net_size        = config['model']['max_input_size'], # tiger 608   
         shuffle             = True, 
         jitter              = 0.3, 
         norm                = normalize

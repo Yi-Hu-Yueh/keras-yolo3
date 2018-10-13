@@ -161,7 +161,7 @@ def bbox_iou(box1, box2):
     return float(intersect) / union
 
 def make_yolov3_model():
-    input_image = Input(shape=(None, None, 3))
+    input_image = Input(shape=(None, None, 3)) # TIGER
 
     # Layer  0 => 4
     x = _conv_block(input_image, [{'filter': 32, 'kernel': 3, 'stride': 1, 'bnorm': True, 'leaky': True, 'layer_idx': 0},
@@ -261,7 +261,8 @@ def preprocess_input(image, net_h, net_w):
 
     # determine the new size of the image
     if (float(net_w)/new_w) < (float(net_h)/new_h):
-        new_h = (new_h * net_w)/new_w
+#         new_h = (new_h * net_w)/new_w
+        new_h = (new_h * net_w)//new_w # TIGER  這才是對的。
         new_w = net_w
     else:
         new_w = (new_w * net_h)/new_h
@@ -383,9 +384,9 @@ def _main_(args):
     image_path   = args.image
 
     # set some parameters
-    net_h, net_w = 416, 416
-    obj_thresh, nms_thresh = 0.5, 0.45
-    anchors = [[116,90,  156,198,  373,326],  [30,61, 62,45,  59,119], [10,13,  16,30,  33,23]]
+    net_h, net_w = 608, 608 # TIGER 416, 416   608, 608
+    obj_thresh, nms_thresh = 0.5, 0.45 # 0,0  TIGER
+    anchors = [[116,90,  156,198,  373,326],  [30,61, 62,45,  59,119], [10,13,  16,30,  33,23]] # TIGER
     labels = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", \
               "boat", "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", \
               "bird", "cat", "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", \
@@ -397,10 +398,10 @@ def _main_(args):
               "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", \
               "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
 
-    # make the yolov3 model to predict 80 classes on COCO
+    # make the yolov3 model to predict 80 classes on COCO  TIGER
     yolov3 = make_yolov3_model()
 
-    # load the weights trained on COCO into the model
+    # load the weights trained on COCO into the model TIGER  不可以在此下 中斷點 !!??
     weight_reader = WeightReader(weights_path)
     weight_reader.load_weights(yolov3)
 
@@ -416,7 +417,8 @@ def _main_(args):
     for i in range(len(yolos)):
         # decode the output of the network
         boxes += decode_netout(yolos[i][0], anchors[i], obj_thresh, nms_thresh, net_h, net_w)
-
+        print(boxes)
+        print("---------------------------------")
     # correct the sizes of the bounding boxes
     correct_yolo_boxes(boxes, image_h, image_w, net_h, net_w)
 

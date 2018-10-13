@@ -12,7 +12,7 @@ def parse_voc_annotation(ann_dir, img_dir, cache_name, labels=[]):
         all_insts = []
         seen_labels = {}
         
-        for ann in sorted(os.listdir(ann_dir)):
+        for ann in sorted(os.listdir(ann_dir)): # TIGER 有作排序
             img = {'object':[]}
 
             try:
