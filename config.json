@@ -1,16 +1,16 @@
 {
     "model" : {
-        "min_input_size":       608,
-        "max_input_size":       608,
+        "min_input_size":       416,
+        "max_input_size":       416,
         
-        "anchors":              [52,66, 75,230, 109,109, 131,223, 136,357, 185,147, 200,292, 265,206, 312,328],
-        "labels":               ["kangaroo"]
+        "anchors":              [16,26, 28,48, 40,63, 43,37, 47,86, 64,84, 69,113, 88,139, 119,191],
+        "labels":               ["hole", "square", "repair"] 
     },
 
     "train": {
-        "train_image_folder":   "C:\\0dsc_zk\\git\\keras-yolo3\\kangaroo-master\\images\\",
-        "train_annot_folder":   "C:\\0dsc_zk\\git\\keras-yolo3\\kangaroo-master\\annots\\",
-        "cache_name":           "kangaroo_train.pkl",
+        "train_image_folder":   "C:\\0dsc_zk\\git\\keras-yolo3\\kholes\\images\\",
+        "train_annot_folder":   "C:\\0dsc_zk\\git\\keras-yolo3\\kholes\\annots\\",
+        "cache_name":           "kholes_train.pkl",
 
         "train_times":          8,
         "batch_size":           16,
@@ -19,8 +19,8 @@
         "warmup_epochs":        3,
         "ignore_thresh":        0.5,
         
-        " tiger ":  "**************",
-        "gpus":                 "0,1",			
+        " tiger ":  "***************************************",
+        "gpus":                 "0",			
 
         "grid_scales":          [1,1,1],
         "obj_scale":            5,
@@ -30,8 +30,8 @@
 
         "tensorboard_dir":      "logs",
         
-        " tiger ": "MODEL IS HERE. *************",
-        "saved_weights_name":   "kangaroo.h5", 
+        " tiger ": "MODEL IS HERE. ************************",
+        "saved_weights_name":   "kholes_448_an_ne4.h5", 
         "debug":                true
     },
 

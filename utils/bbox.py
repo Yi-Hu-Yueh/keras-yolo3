@@ -53,10 +53,11 @@ def bbox_iou(box1, box2):
     w2, h2 = box2.xmax-box2.xmin, box2.ymax-box2.ymin
     
     union = w1*h1 + w2*h2 - intersect
-    
     return float(intersect) / union
 
 def draw_boxes(image, boxes, labels, obj_thresh, quiet=True):
+#     print("-----------------draw_boxes-----------------------------------draw_boxes-----------------")  
+    zzz=0  
     for box in boxes:
         label_str = ''
         label = -1
@@ -66,6 +67,12 @@ def draw_boxes(image, boxes, labels, obj_thresh, quiet=True):
                 if label_str != '': label_str += ', '
                 label_str += (labels[i] + ' ' + str(round(box.get_score()*100, 2)) + '%')
                 label = i
+#                 print("---------------------------------------" + str(zzz) + "-------------------------------")                
+#                 print(labels[i] + ': ' + str(box.classes[i]*100) + '%')
+#                 
+#                 zzz = zzz + 1 
+#                 print(label_str + " ===> " + str(box.xmin) + "," + str(box.ymin))
+#                 print("----------------------------------------------------------------------")                
             if not quiet: print(label_str)
                 
         if label >= 0:
@@ -77,6 +84,9 @@ def draw_boxes(image, boxes, labels, obj_thresh, quiet=True):
                                [box.xmin+width+13, box.ymin]], dtype='int32')  
 
             cv2.rectangle(img=image, pt1=(box.xmin,box.ymin), pt2=(box.xmax,box.ymax), color=get_color(label), thickness=5)
+            
+            
+            
             cv2.fillPoly(img=image, pts=[region], color=get_color(label))
             cv2.putText(img=image, 
                         text=label_str, 
@@ -84,6 +94,5 @@ def draw_boxes(image, boxes, labels, obj_thresh, quiet=True):
                         fontFace=cv2.FONT_HERSHEY_SIMPLEX, 
                         fontScale=1e-3 * image.shape[0], 
                         color=(0,0,0), 
-                        thickness=2)
-        
+                        thickness=2)                 
     return image          

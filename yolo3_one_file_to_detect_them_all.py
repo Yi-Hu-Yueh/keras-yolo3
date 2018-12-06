@@ -265,7 +265,7 @@ def preprocess_input(image, net_h, net_w):
         new_h = (new_h * net_w)//new_w # TIGER  這才是對的。
         new_w = net_w
     else:
-        new_w = (new_w * net_h)/new_h
+        new_w = (new_w * net_h)/new_h  # TIGER  這才是對的????????
         new_h = net_h
 
     # resize the image to the new size

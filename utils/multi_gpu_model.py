@@ -37,10 +37,7 @@ def multi_gpu_model(model, gpus):
                 # Retrieve a slice of the input.
                 for x in model.inputs:
                     input_shape = tuple(x.get_shape().as_list())[1:]
-                    slice_i = Lambda(get_slice,
-                                                     output_shape=input_shape,
-                                                     arguments={'i': i,
-                                                                            'parts': num_gpus})(x)
+                    slice_i = Lambda(get_slice, output_shape=input_shape, arguments={'i': i, 'parts': num_gpus})(x)
                     inputs.append(slice_i)
 
                 # Apply model on slice
@@ -57,6 +54,5 @@ def multi_gpu_model(model, gpus):
     with tf.device('/cpu:0'):
         merged = []
         for name, outputs in zip(model.output_names, all_outputs):
-            merged.append(concatenate(outputs,
-                                                                axis=0, name=name))
+            merged.append(concatenate(outputs, axis=0, name=name))
         return Model(model.inputs, merged)

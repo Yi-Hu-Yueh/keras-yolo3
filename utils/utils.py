@@ -201,7 +201,7 @@ def decode_netout(netout, anchors, obj_thresh, net_h, net_w):
             classes = netout[row,col,b,5:]
             
             box = BoundBox(x-w/2, y-h/2, x+w/2, y+h/2, objectness, classes)
-
+            
             boxes.append(box)
 
     return boxes

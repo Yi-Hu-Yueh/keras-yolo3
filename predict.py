@@ -47,7 +47,7 @@ def _main_(args):
 
             if (len(images)==batch_size) or (ret_val==False and len(images)>0):
                 batch_boxes = get_yolo_boxes(infer_model, images, net_h, net_w, config['model']['anchors'], obj_thresh, nms_thresh)
-
+                
                 for i in range(len(images)):
                     draw_boxes(images[i], batch_boxes[i], config['model']['labels'], obj_thresh) 
                     cv2.imshow('video with bboxes', images[i])
@@ -64,8 +64,8 @@ def _main_(args):
         frame_w = int(video_reader.get(cv2.CAP_PROP_FRAME_WIDTH))
 
         video_writer = cv2.VideoWriter(video_out,
-                               cv2.VideoWriter_fourcc(*'MPEG'), 
-                               50.0, 
+                               cv2.VideoWriter_fourcc(*'XVID'),  # *'MPEG'
+                               30.0, 
                                (frame_w, frame_h))
         # the main loop
         batch_size  = 1
@@ -120,7 +120,8 @@ def _main_(args):
             draw_boxes(image, boxes, config['model']['labels'], obj_thresh) 
      
             # write the image with bounding boxes to file
-            cv2.imwrite(output_path + image_path.split('/')[-1], np.uint8(image))         
+            cv2.imwrite(output_path + "\\" + image_path.split('\\')[-1], np.uint8(image))   
+#             cv2.imwrite(output_path + image_path.split('/')[-1], np.uint8(image))         
 
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser(description='Predict with a trained yolo model')

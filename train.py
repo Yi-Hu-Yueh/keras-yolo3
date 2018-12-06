@@ -147,7 +147,7 @@ def create_model(
         )  
 
     # load the pretrained weight if exists, otherwise load the backend weight only
-    if os.path.exists(saved_weights_name): 
+    if os.path.exists(saved_weights_name):  # "saved_weights_name":   "kangaroo.h5", TIGER
         print("\nLoading pretrained weights.\n")
         template_model.load_weights(saved_weights_name)
     else:
