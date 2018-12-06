@@ -9,7 +9,9 @@ Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCX
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
 2. 程式設定: 
+
      (第17行) 假設 影片名稱為Produce.mp4，則 input_path   = './o_input/Produce.mp4'。
+     
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
      (第34行) infer_model = load_model('kholes_448_an_ne4.h5') 
