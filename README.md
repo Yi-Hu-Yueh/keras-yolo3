@@ -16,7 +16,7 @@
      windows。
 6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair"] #   ["圓孔蓋", "方孔蓋", "修補"])。
 
-
+[![Video]](https://www.youtube.com/watch?v=27hQxyAILgM)
 
 
 
