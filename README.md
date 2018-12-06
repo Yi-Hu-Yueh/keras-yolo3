@@ -27,7 +27,7 @@ Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCX
 
 
 
-# YOLO3 (Detection, Training, and Evaluation)
+# YOLO3 (Detection, Training, and Evaluation) 以下為原作者
 
 ## Dataset and Model
 
