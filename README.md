@@ -17,7 +17,8 @@
 6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair"] #   ["圓孔蓋", "方孔蓋", "修補"])。
 
 台灣大道(五權-河南) [![Video]](https://www.youtube.com/watch?v=27hQxyAILgM) 
-Youtube : https://studio.youtube.com/channel/UClKiktZTDHSfVjw3pEcyZGg/videos
+
+Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
 
 
 
