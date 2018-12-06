@@ -1,3 +1,30 @@
+# 0. 執行指令:
+#      !python predict.py -c config.json -i /path/to/image/or/video  
+#      輸入為 圖片: !python predict.py -c config.json -i ./o_input
+#      輸入為 影片: !python predict.py -c config.json -i ./o_input/Produce.mp4  
+
+1. 輸入檔案擺放位置:
+     將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
+2. 程式設定: 
+     (第17行) 假設 影片名稱為Produce.mp4，則 input_path   = './o_input/Produce.mp4'。
+     (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
+    
+     (第34行) infer_model = load_model('kholes_448_an_ne4.h5') 
+                 model 為 kholes_448_an_ne4.h5，大於100M，無法上傳github。
+                 下載點: https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing。
+3. 輸出結果:
+     執行結束後，輸出會在 資料夾 output。6秒鐘的影片，大約需要9分鐘；一張圖片，約3秒鐘(在很普通的筆電)。
+4. 資料蒐集:
+     使用 A8+ 手機。
+5. 測試環境:
+     windows。
+6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair"] #   ["圓孔蓋", "方孔蓋", "修補"])。
+
+
+
+
+
+
 # YOLO3 (Detection, Training, and Evaluation)
 
 ## Dataset and Model
