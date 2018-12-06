@@ -3,7 +3,7 @@
 
 Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
 
-  ![deploy](./學士路(進北-五權).png=200x200)
+  ![deploy](./學士路(進北-五權).png)=200x200
 
 # predict 圖片或影片
 1. 輸入檔案擺放位置:
