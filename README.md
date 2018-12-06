@@ -3,6 +3,8 @@
 
 Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
 
+<img src="./學士路(進北-五權).png" width="200" height="200" />
+
   ![](./pic/./學士路(進北-五權).png =200x200)
   
   ![deploy](./學士路(進北-五權).png)=200x200
