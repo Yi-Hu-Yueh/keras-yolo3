@@ -1,3 +1,9 @@
+
+台灣大道(五權-河南) [![Video]](https://www.youtube.com/watch?v=27hQxyAILgM) 
+
+Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
+
+# predict 圖片或影片
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
 2. 程式設定: 
@@ -16,9 +22,7 @@
      windows。
 6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair"] #   ["圓孔蓋", "方孔蓋", "修補"])。
 
-台灣大道(五權-河南) [![Video]](https://www.youtube.com/watch?v=27hQxyAILgM) 
 
-Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
 
 
 
