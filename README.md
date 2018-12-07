@@ -8,7 +8,7 @@ Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCX
 # predict 圖片或影片
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
-2. 程式設定: 
+2. 程式設定: 開啟 holes_dection.ipynb
 
      (第17行) 假設 影片名稱為Produce.mp4，則 input_path   = './o_input/Produce.mp4'。
      
