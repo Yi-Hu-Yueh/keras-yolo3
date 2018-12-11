@@ -14,7 +14,8 @@ Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCX
      
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
-     (第34行) infer_model = load_model('kholes_448_an_ne4.h5') : <br />
+     (第34行) infer_model = load_model('kholes_448_an_ne4.h5') :
+     
                  model 為 kholes_448_an_ne4.h5 (偵測3種類別 "圓孔蓋", "方孔蓋", "修補")，大於100M，無法上傳github.
                  下載點: https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
                  下載後，至於專案根目錄。
