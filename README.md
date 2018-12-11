@@ -15,16 +15,19 @@ Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCX
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
      (第34行) infer_model = load_model('kholes_448_an_ne4.h5') 
-                 model 為 kholes_448_an_ne4.h5，大於100M，無法上傳github。
+                 model 為 kholes_448_an_ne4.h5 (偵測3種類別 "圓孔蓋", "方孔蓋", "修補")，大於100M，無法上傳github。
                  下載點: https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing。
                  下載後，至於專案根目錄。
+                 
+                 model 為 kholes_608_ang_ne.h5 (偵測4種類別 "圓孔蓋", "方孔蓋", "修補"龜裂")
+                 下載點: https://drive.google.com/file/d/1ADuvdtIh4tG4baw7_KnDk8ieQ3I1kGHR/view?usp=sharing
 3. 輸出結果:
      執行結束後，輸出會在 資料夾 output。6秒鐘的影片，大約需要9分鐘；一張圖片，約3秒鐘(在很普通的筆電)。
 4. 資料蒐集:
      使用 A8+ 手機。
 5. 測試環境:
      windows。
-6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair", "crack"] #   ["圓孔蓋", "方孔蓋", "修補","龜裂"])。龜裂 尚未實作。
+6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair", "crack"] #   ["圓孔蓋", "方孔蓋", "修補","龜裂"])。
 
 
 
