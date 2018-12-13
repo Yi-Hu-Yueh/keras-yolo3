@@ -14,7 +14,6 @@
 
 ## bounding box
 +  <img src="./圖說.png" width="400" height="238" />
-
 ## predict 圖片或影片
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
