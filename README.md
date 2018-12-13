@@ -38,10 +38,7 @@ bounding box:
 
 ## Todo list:
 - [ ] 製作手機App。
-- [ ] 
-- [ ]
-- [ ]
-
+- [ ] 依據出現的bounding boxes數目，建立評比分數。
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
 
