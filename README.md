@@ -36,9 +36,11 @@ bounding box:
      windows。
 6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair", "crack"] #   ["圓孔蓋", "方孔蓋", "修補","龜裂"])。
 
-
-
-
+## Todo list:
+- [ ] 製作手機App。
+- [ ] 
+- [ ]
+- [ ]
 
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
