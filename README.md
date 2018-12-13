@@ -19,6 +19,7 @@ bounding box:
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
     以下有2個模型，分別偵測 3個類別、4個類別:
+    
      (第34行)     infer_model = load_model('kholes_448_an_ne4.h5') :    
                   model 為 kholes_448_an_ne4.h5 (偵測3種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))，大於100M，無法上傳github. 
                  下載點: https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
