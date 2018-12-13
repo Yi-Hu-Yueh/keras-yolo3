@@ -20,12 +20,12 @@ bounding box:
     
     以下有2個模型，分別偵測 3個類別、4個類別:
     
-     (第34行)     infer_model = load_model('kholes_448_an_ne4.h5') :    
+       (第34行)     infer_model = load_model('kholes_448_an_ne4.h5') :    
                   model 為 kholes_448_an_ne4.h5 (偵測3種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))，大於100M，無法上傳github. 
                  下載點: https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
                  下載後，至於專案根目錄。
                  
-     (第34行)    infer_model = load_model('kholes_608_ang_ne.h5') :     
+       (第34行)    infer_model = load_model('kholes_608_ang_ne.h5') :     
                  model 為 kholes_608_ang_ne.h5 (偵測4種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色), "龜裂"(綠色))  
                  下載點: https://drive.google.com/file/d/1ADuvdtIh4tG4baw7_KnDk8ieQ3I1kGHR/view?usp=sharing
 3. 輸出結果:
