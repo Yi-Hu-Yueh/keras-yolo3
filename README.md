@@ -6,18 +6,16 @@
 +  基隆人的怒吼！路平連署　車禍截肢女哭求政府還公道
          https://www.ettoday.net/news/20120408/37682.htm
 
-
-台灣大道(五權-河南) [[影片]](https://www.youtube.com/watch?v=dGdSBJNrWFo) 
-
-Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
+## Youtube
++  台灣大道(五權-河南) [[影片]](https://www.youtube.com/watch?v=dGdSBJNrWFo)
++  頻道 : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
 
 <img src="./學士路(進北-五權).png" width="400" height="238" /> <img src="./00000.png" width="400" height="238" />
 
-bounding box:
+## bounding box
++  <img src="./圖說.png" width="400" height="238" />
 
-<img src="./圖說.png" width="400" height="238" />
-
-# predict 圖片或影片
+## predict 圖片或影片
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
 2. 程式設定: 開啟 holes_dection.ipynb
