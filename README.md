@@ -24,13 +24,13 @@
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
     以下有2個模型，分別偵測 4個類別、3個類別:
-       2.1 model 為 kholes_608_ang_ne.h5:  
+    +  2.1 model 為 kholes_608_ang_ne.h5:  
          下載點: https://drive.google.com/file/d/1ADuvdtIh4tG4baw7_KnDk8ieQ3I1kGHR/view?usp=sharing    
          下載後，至於專案根目錄。
                   開啟 holes_dection_3classes.ipynb，直接執行。
                   (偵測4種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))  
                   第34行 infer_model = load_model('kholes_608_ang_ne.h5') :     
-       3.1 model 為 kholes_448_an_ne4.h5:
+    +  3.1 model 為 kholes_448_an_ne4.h5:
                   下載點 https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
                   下載後，至於專案根目錄。
                   開啟 holes_dection_4classes.ipynb，直接執行。
