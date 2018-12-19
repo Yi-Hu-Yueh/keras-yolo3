@@ -30,7 +30,7 @@
                   開啟 holes_dection_3classes.ipynb，直接執行。
                   (偵測4種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))  
                   第34行 infer_model = load_model('kholes_608_ang_ne.h5') :     
-    +  3.1  model 為 kholes_448_an_ne4.h5:
+    +  2.2  model 為 kholes_448_an_ne4.h5:
                   下載點 https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
                   下載後，至於專案根目錄。
                   開啟 holes_dection_4classes.ipynb，直接執行。
