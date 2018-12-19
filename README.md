@@ -17,25 +17,25 @@
 ## predict 圖片或影片
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
-2. 程式設定: 開啟 holes_dection.ipynb
+2. 程式設定: 
 
      (第17行) 假設 影片名稱為Produce.mp4，則 input_path   = './o_input/Produce.mp4'。
      
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
     以下有2個模型，分別偵測 3個類別、4個類別:  (預設使用 kholes_608_ang_ne.h5，偵測 4個類別)
-    
-       第34行    infer_model = load_model('kholes_608_ang_ne.h5') :     
-                 model 為 kholes_608_ang_ne.h5 (偵測4種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色), "龜裂"(綠色))  
-                 下載點: https://drive.google.com/file/d/1ADuvdtIh4tG4baw7_KnDk8ieQ3I1kGHR/view?usp=sharing    
-                 下載後，至於專案根目錄。  
-                 
-       第34行     infer_model = load_model('kholes_448_an_ne4.h5') :    
-                  model 為 kholes_448_an_ne4.h5 (偵測3種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))，大於100M，無法上傳github. 
-                       再異動: net_h, net_w = 448, 448
-                       再異動: anchors = [15,15, 19,46, 40,101, 42,22, 81,41, 84,15, 125,71, 181,33, 196,118]
-                       再異動: labels = ["hole", "square", "repair" ] # TIGER    ["圓孔蓋", "方孔蓋", "修補"]
+       model 為 kholes_608_ang_ne.h5  
+                  下載點: https://drive.google.com/file/d/1ADuvdtIh4tG4baw7_KnDk8ieQ3I1kGHR/view?usp=sharing    
+                  下載後，至於專案根目錄。
+                  開啟 holes_dection_3classes.ipynb，直接執行。
+                           (偵測4種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))  
+                           第34行 infer_model = load_model('kholes_608_ang_ne.h5') :     
+       model 為 kholes_448_an_ne4.h5
                   下載點 https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
+                  下載後，至於專案根目錄。
+                  開啟 holes_dection_4classes.ipynb，直接執行。
+                           (偵測3種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色), "龜裂"(綠色))  
+                           第34行 infer_model = load_model('kholes_448_an_ne4.h5') :    
 3. 輸出結果:
      執行結束後，輸出會在 資料夾 output。6秒鐘的影片，大約需要9分鐘；一張圖片，約3秒鐘(在很普通的筆電)。
 4. 資料蒐集:
