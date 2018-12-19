@@ -7,6 +7,8 @@ def get_color(label):
         A list of three values representing a RGB color.
     """
     if label < len(colors):
+#         print(str(label) + " : ")
+#         print("    " +  str(colors[label][0]) + "," + str(colors[label][1]) + "," + str(colors[label][2]) )
         return colors[label]
     else:
         print('Label {} has no color, returning default.'.format(label))
@@ -16,7 +18,7 @@ colors = [
     [31  , 0   , 255] ,
     [0   , 159 , 255] ,
     [255 , 95  , 0]   ,
-    [255 , 19  , 0]   ,
+    [0   , 255 , 6]   , #  [255 , 19  , 0]   ,
     [255 , 0   , 0]   ,
     [255 , 38  , 0]   ,
     [0   , 255 , 25]  ,

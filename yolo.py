@@ -175,7 +175,7 @@ class YoloLayer(Layer):
         loss_class = tf.reduce_sum(class_delta,               list(range(1,5)))
 
         loss = loss_xy + loss_wh + loss_conf + loss_class
-
+        return loss*self.grid_scale
         loss = tf.Print(loss, [grid_h, avg_obj], message='avg_obj \t\t', summarize=1000)
         loss = tf.Print(loss, [grid_h, avg_noobj], message='avg_noobj \t\t', summarize=1000)
         loss = tf.Print(loss, [grid_h, avg_iou], message='avg_iou \t\t', summarize=1000)
@@ -260,7 +260,7 @@ def create_yolov3_model(
         x = _conv_block(x, [{'filter': 128, 'kernel': 1, 'stride': 1, 'bnorm': True, 'leaky': True, 'layer_idx': 16+i*3},
                             {'filter': 256, 'kernel': 3, 'stride': 1, 'bnorm': True, 'leaky': True, 'layer_idx': 17+i*3}])
         
-    skip_36 = x # TIGER  剩餘網路概念
+    skip_36 = x
         
     # Layer 37 => 40
     x = _conv_block(x, [{'filter': 512, 'kernel': 3, 'stride': 2, 'bnorm': True, 'leaky': True, 'layer_idx': 37},
@@ -357,7 +357,6 @@ def create_yolov3_model(
 
     train_model = Model([input_image, true_boxes, true_yolo_1, true_yolo_2, true_yolo_3], [loss_yolo_1, loss_yolo_2, loss_yolo_3])
     infer_model = Model(input_image, [pred_yolo_1, pred_yolo_2, pred_yolo_3])
-
     return [train_model, infer_model]
 
 def dummy_loss(y_true, y_pred):

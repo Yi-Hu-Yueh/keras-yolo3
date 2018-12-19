@@ -43,7 +43,7 @@ def print_anchors(centroids):
 
     r = "anchors: ["
     for i in sorted_indices:
-        out_string += str(int(anchors[i,0]*608)) + ',' + str(int(anchors[i,1]*608)) + ', ' # TIGER  416  416
+        out_string += str(int(anchors[i,0]*416)) + ',' + str(int(anchors[i,1]*416)) + ', '
             
     print(out_string[:-2])
 

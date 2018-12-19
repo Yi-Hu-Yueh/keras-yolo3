@@ -12,9 +12,9 @@ def parse_voc_annotation(ann_dir, img_dir, cache_name, labels=[]):
         all_insts = []
         seen_labels = {}
         
-        for ann in sorted(os.listdir(ann_dir)): # TIGER 有作排序
+        for ann in sorted(os.listdir(ann_dir)):
             img = {'object':[]}
-            ann_seen_labels = {}
+
             try:
                 tree = ET.parse(ann_dir + ann)
             except Exception as e:
@@ -35,17 +35,11 @@ def parse_voc_annotation(ann_dir, img_dir, cache_name, labels=[]):
                     for attr in list(elem):
                         if 'name' in attr.tag:
                             obj['name'] = attr.text
-#                             if(obj['name'] =='2_pepper_metured'):
-#                                 print('ppp')
+
                             if obj['name'] in seen_labels:
                                 seen_labels[obj['name']] += 1
                             else:
                                 seen_labels[obj['name']] = 1
-                                
-                            if obj['name'] in ann_seen_labels:
-                                ann_seen_labels[obj['name']] += 1  
-                            else:                              
-                                ann_seen_labels[obj['name']] = 1
                             
                             if len(labels) > 0 and obj['name'] not in labels:
                                 break
@@ -63,14 +57,8 @@ def parse_voc_annotation(ann_dir, img_dir, cache_name, labels=[]):
                                 if 'ymax' in dim.tag:
                                     obj['ymax'] = int(round(float(dim.text)))
 
-            if len(img['object']) > 0: # 這樣才加入 TIGER
-#                 print(ann + ":") # , end='') 
-#                 for key in ann_seen_labels:
-#                     print("  " + key, '有', ann_seen_labels[key])
-                print("------------------------------------------------------")    
-#                 if(len(img['object']) > 1):
-#                     print(len(img['object']) > 0)
-                all_insts += [img]
+#             if len(img['object']) > 0: # TIGER
+            all_insts += [img]
 
         cache = {'all_insts': all_insts, 'seen_labels': seen_labels}
         with open(cache_name, 'wb') as handle:

@@ -1,31 +1,52 @@
+## 道路不平，導致車禍案例:     
++  研發替代役的碩士畢業生，補丁不平而摔車，慘遭一旁的大貨車輾爆頭當場慘死:  
+         https://blog.xuite.net/seeder999/blog/393133787-%E5%9C%8B%E5%AE%B6%E8%B3%A0%E5%84%9F--%E9%81%93%E8%B7%AF%E6%96%BD%E5%B7%A5%E5%BE%8C%E8%A3%9C%E4%B8%81%E4%B8%8D%E5%B9%B3  
++  兒車禍喪命 父填平孟買坑洞路
+         http://merit-times.com/NewsPage.aspx?Unid=520935
++  基隆人的怒吼！路平連署　車禍截肢女哭求政府還公道
+         https://www.ettoday.net/news/20120408/37682.htm
 
-台灣大道(五權-河南) [![Video]](https://www.youtube.com/watch?v=27hQxyAILgM) 
+## Youtube
++  台灣大道(五權-河南) [[影片]](https://www.youtube.com/watch?v=dGdSBJNrWFo)
++  頻道 : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
 
-Youtube : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
+<img src="./學士路(進北-五權).png" width="400" height="238" /> <img src="./00000.png" width="400" height="238" />
 
-# predict 圖片或影片
+## bounding box
++  <img src="./圖說.png" width="400" height="238" />
+## predict 圖片或影片
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
-2. 程式設定: 
+2. 程式設定: 開啟 holes_dection.ipynb
+
      (第17行) 假設 影片名稱為Produce.mp4，則 input_path   = './o_input/Produce.mp4'。
+     
      (第17行) 假設 要偵測圖片(可以多張)，則 input_path   = './o_input/' 。
     
-     (第34行) infer_model = load_model('kholes_448_an_ne4.h5') 
-                 model 為 kholes_448_an_ne4.h5，大於100M，無法上傳github。
-                 下載點: https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing。
-                 下載後，至於專案根目錄。
+    以下有2個模型，分別偵測 3個類別、4個類別:  (預設使用 kholes_608_ang_ne.h5，偵測 4個類別)
+    
+       第34行    infer_model = load_model('kholes_608_ang_ne.h5') :     
+                 model 為 kholes_608_ang_ne.h5 (偵測4種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色), "龜裂"(綠色))  
+                 下載點: https://drive.google.com/file/d/1ADuvdtIh4tG4baw7_KnDk8ieQ3I1kGHR/view?usp=sharing    
+                 下載後，至於專案根目錄。  
+                 
+       第34行     infer_model = load_model('kholes_448_an_ne4.h5') :    
+                  model 為 kholes_448_an_ne4.h5 (偵測3種類別 "圓孔蓋"(紅色), "方孔蓋"(黃色), "修補"(藍色))，大於100M，無法上傳github. 
+                       再異動: net_h, net_w = 448, 448
+                       再異動: anchors = [15,15, 19,46, 40,101, 42,22, 81,41, 84,15, 125,71, 181,33, 196,118]
+                       再異動: labels = ["hole", "square", "repair" ] # TIGER    ["圓孔蓋", "方孔蓋", "修補"]
+                  下載點 https://drive.google.com/file/d/1wbhtz99RANQ2-EDhSCW3hKhsHSrHWXw3/view?usp=sharing 
 3. 輸出結果:
      執行結束後，輸出會在 資料夾 output。6秒鐘的影片，大約需要9分鐘；一張圖片，約3秒鐘(在很普通的筆電)。
 4. 資料蒐集:
      使用 A8+ 手機。
 5. 測試環境:
      windows。
-6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair"] #   ["圓孔蓋", "方孔蓋", "修補"])。
+6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair", "crack"] #   ["圓孔蓋", "方孔蓋", "修補","龜裂"])。
 
-
-
-
-
+## Todo list:
+- [ ] 製作手機App。
+- [ ] 依據出現的bounding boxes數目，建立評比分數。
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
 

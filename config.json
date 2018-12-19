@@ -1,16 +1,16 @@
 {
     "model" : {
-        "min_input_size":       416,
-        "max_input_size":       416,
+        "min_input_size":       608,
+        "max_input_size":       608,
         
-        "anchors":              [16,26, 28,48, 40,63, 43,37, 47,86, 64,84, 69,113, 88,139, 119,191],
-        "labels":               ["hole", "square", "repair"] 
+        "anchors":              [9,13, 10,7, 19,20, 38,36, 57,22, 90,81, 91,41, 144,67, 209,119],
+        "labels":               ["1_mediumcircle", "4_mediumsquare", "6_patch"],
     },
 
     "train": {
-        "train_image_folder":   "C:\\0dsc_zk\\git\\keras-yolo3\\kholes\\images\\",
-        "train_annot_folder":   "C:\\0dsc_zk\\git\\keras-yolo3\\kholes\\annots\\",
-        "cache_name":           "kholes_train.pkl",
+        "train_image_folder":   "./kholes/images",
+        "train_annot_folder":   "./kholes/annots",
+        "cache_name":           "holes.pkl",
 
         "train_times":          8,
         "batch_size":           16,
@@ -20,7 +20,7 @@
         "ignore_thresh":        0.5,
         
         " tiger ":  "***************************************",
-        "gpus":                 "0",			
+        "gpus":                 "0,1",			
 
         "grid_scales":          [1,1,1],
         "obj_scale":            5,
@@ -31,7 +31,7 @@
         "tensorboard_dir":      "logs",
         
         " tiger ": "MODEL IS HERE. ************************",
-        "saved_weights_name":   "kholes_448_an_ne4.h5", 
+        "saved_weights_name":   "voc.h5", 
         "debug":                true
     },
 
