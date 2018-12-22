@@ -5,6 +5,8 @@
          http://merit-times.com/NewsPage.aspx?Unid=520935
 +  基隆人的怒吼！路平連署　車禍截肢女哭求政府還公道
          https://www.ettoday.net/news/20120408/37682.htm
++  路肩超車壓5公分凸起摔！碩二女慘被遊覽車輾頭亡　家屬擬告國賠
+         https://www.ettoday.net/news/20181206/1323800.htm
 
 ## Youtube
 +  台灣大道(五權-河南) [[影片]](https://www.youtube.com/watch?v=dGdSBJNrWFo)
