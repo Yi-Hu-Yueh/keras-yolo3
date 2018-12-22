@@ -1,8 +1,12 @@
 ## 道路不平，導致車禍案例:     
 +  2016年  研發替代役的碩士畢業生，補丁不平而摔車，慘遭一旁的大貨車輾爆頭當場慘死:  
-         https://blog.xuite.net/seeder999/blog/393133787-%E5%9C%8B%E5%AE%B6%E8%B3%A0%E5%84%9F--%E9%81%93%E8%B7%AF%E6%96%BD%E5%B7%A5%E5%BE%8C%E8%A3%9C%E4%B8%81%E4%B8%8D%E5%B9%B3  
+         https://blog.xuite.net/seeder999/blog/393133787-%E5%9C%8B%E5%AE%B6%E8%B3%A0%E5%84%9F--%E9%81%93%E8%B7%AF%E6%96%BD%E5%B7%A5%E5%BE%8C%E8%A3%9C%E4%B8%81%E4%B8%8D%E5%B9%B3 
++  2018年  125公分長坑洞釀死亡車禍　屏東縣府賠186萬定讞
+         https://www.setn.com/News.aspx?NewsID=452025
 +  2018年  兒車禍喪命 父填平孟買坑洞路
          http://merit-times.com/NewsPage.aspx?Unid=520935
++  2012年  機車閃坑洞摔車乘客亡 判國賠202萬
+         http://news.ltn.com.tw/news/society/breakingnews/1790428         
 +  2012年  基隆人的怒吼！路平連署　車禍截肢女哭求政府還公道
          https://www.ettoday.net/news/20120408/37682.htm
 +  2018年 (跟下一則情況很像) 路肩超車壓5公分凸起摔！碩二女慘被遊覽車輾頭亡　家屬擬告國賠
