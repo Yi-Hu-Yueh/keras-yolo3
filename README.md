@@ -1,6 +1,8 @@
 ## 道路不平，導致車禍案例:     
++  2015年  台灣機車族的噩夢：坑坑巴巴、永遠補不完的道路，早已成了殺人兇器。一個地方政府，最、最、最基本的工作之一，就是造橋鋪路。
+         https://buzzorange.com/2015/04/13/uneven-pathment-causes-lots-of-car-accidents-in-tw/
 +  2016年  研發替代役的碩士畢業生，補丁不平而摔車，慘遭一旁的大貨車輾爆頭當場慘死:  
-         https://blog.xuite.net/seeder999/blog/393133787-%E5%9C%8B%E5%AE%B6%E8%B3%A0%E5%84%9F--%E9%81%93%E8%B7%AF%E6%96%BD%E5%B7%A5%E5%BE%8C%E8%A3%9C%E4%B8%81%E4%B8%8D%E5%B9%B3 
+         https://goo.gl/JyrtJf 
 +  2018年  125公分長坑洞釀死亡車禍　屏東縣府賠186萬定讞
          https://www.setn.com/News.aspx?NewsID=452025
 +  2018年  兒車禍喪命 父填平孟買坑洞路
