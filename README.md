@@ -59,6 +59,8 @@
 
 ## Todo list:
 - [x] 製作手機App。
+- [ ] 新增檢測 類別。
+         路面分隔島反光導標磨損，光線不足，喪失警示功能，導致劉姓男大生視線不清，撞上分隔島當場摔車慘死 (https://tw.appledaily.com/new/realtime/20181015/1442640/)
 - [ ] 依據出現的bounding boxes數目，建立評比分數。
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
