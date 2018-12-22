@@ -18,7 +18,7 @@
 0. 執行: 
     +  0.1  開啟 holes_dection_3classes.ipynb，直接執行。輸出在 資料夾 output。測試圖片在 ./o_input/ 。 
     +  0.2  開啟 holes_dection_4classes.ipynb，直接執行。輸出在 資料夾 output。測試圖片在 ./o_input/ 。
-    
+    +  Android app下載點: https://drive.google.com/file/d/1NA7GmU9GAODy5MaIWsuX4YpUalU9OkR5/view?usp=sharing
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
 2. 程式設定: 
@@ -49,7 +49,7 @@
 6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair", "crack"] #   ["圓孔蓋", "方孔蓋", "修補","龜裂"])。
 
 ## Todo list:
-- [ ] 製作手機App。
+- [x] 製作手機App。
 - [ ] 依據出現的bounding boxes數目，建立評比分數。
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
