@@ -1,10 +1,10 @@
 ## 道路不平，導致車禍案例:     
 +  2015年  台灣機車族的噩夢：坑坑巴巴、永遠補不完的道路，早已成了殺人兇器。一個地方政府，最、最、最基本的工作之一，就是造橋鋪路。
-         https://buzzorange.com/2015/04/13/uneven-pathment-causes-lots-of-car-accidents-in-tw/
+         https://goo.gl/BZREnC
 +  2016年  研發替代役的碩士畢業生，補丁不平而摔車，慘遭一旁的大貨車輾爆頭當場慘死:  
          https://goo.gl/JyrtJf 
 +  2018年  125公分長坑洞釀死亡車禍　屏東縣府賠186萬定讞
-         https://www.setn.com/News.aspx?NewsID=452025
+         https://goo.gl/QXKhcY
 +  2018年  兒車禍喪命 父填平孟買坑洞路
          http://merit-times.com/NewsPage.aspx?Unid=520935
 +  2012年  機車閃坑洞摔車乘客亡 判國賠202萬
@@ -62,7 +62,7 @@
 ## Todo list:
 - [x] 製作手機App。
 - [ ] 新增檢測 類別。
-         路面分隔島反光導標磨損，光線不足，喪失警示功能，導致劉姓男大生視線不清，撞上分隔島當場摔車慘死 (https://tw.appledaily.com/new/realtime/20181015/1442640/)
+         路面分隔島反光導標磨損，光線不足，喪失警示功能，導致劉姓男大生視線不清，撞上分隔島當場摔車慘死 (https://goo.gl/Y7mK6D)
 - [ ] 依據出現的bounding boxes數目，建立評比分數。
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
