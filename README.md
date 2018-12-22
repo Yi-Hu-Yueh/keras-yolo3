@@ -17,6 +17,12 @@
          https://goo.gl/ZMzJna
 
 
+## Todo list:
+- [x] 製作手機App。
+- [ ] 新增檢測 類別。
+         路面分隔島反光導標磨損，光線不足，喪失警示功能，導致劉姓男大生視線不清，撞上分隔島當場摔車慘死 (https://goo.gl/Y7mK6D)
+- [ ] 依據出現的bounding boxes數目，建立評比分數。
+
 ## Youtube
 +  台灣大道(五權-河南) [[影片]](https://www.youtube.com/watch?v=dGdSBJNrWFo)
 +  頻道 : https://www.youtube.com/playlist?list=PLo1dI8UvQiZhsJXu1EAROgNium1kPCXSH
@@ -59,11 +65,8 @@
      windows。
 6. 取消utils/bbox.py的所有註解，會輸出bounding box的座標與 類別(["hole", "square", "repair", "crack"] #   ["圓孔蓋", "方孔蓋", "修補","龜裂"])。
 
-## Todo list:
-- [x] 製作手機App。
-- [ ] 新增檢測 類別。
-         路面分隔島反光導標磨損，光線不足，喪失警示功能，導致劉姓男大生視線不清，撞上分隔島當場摔車慘死 (https://goo.gl/Y7mK6D)
-- [ ] 依據出現的bounding boxes數目，建立評比分數。
+
+
 
 # YOLO3 (Detection, Training, and Evaluation) 以下為原作者
 
