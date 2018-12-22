@@ -6,15 +6,15 @@
 +  2018年  125公分長坑洞釀死亡車禍　屏東縣府賠186萬定讞
          https://goo.gl/QXKhcY
 +  2018年  兒車禍喪命 父填平孟買坑洞路
-         http://merit-times.com/NewsPage.aspx?Unid=520935
+         https://goo.gl/Uybim8
 +  2012年  機車閃坑洞摔車乘客亡 判國賠202萬
-         http://news.ltn.com.tw/news/society/breakingnews/1790428         
+         https://goo.gl/DzYeME         
 +  2012年  基隆人的怒吼！路平連署　車禍截肢女哭求政府還公道
-         https://www.ettoday.net/news/20120408/37682.htm
+         https://goo.gl/uPYk6r
 +  2018年 (跟下一則情況很像) 路肩超車壓5公分凸起摔！碩二女慘被遊覽車輾頭亡　家屬擬告國賠
-         https://www.ettoday.net/news/20181206/1323800.htm
+         https://goo.gl/1uBUAH
 +  2014年 [東森新聞HD]廚師摔車遭輾斃 父：路不平害死兒 
-         https://www.youtube.com/watch?v=PtkQ-uGyJIs
+         https://goo.gl/ZMzJna
 
 
 ## Youtube
