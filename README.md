@@ -21,7 +21,9 @@
 - [x] 製作手機App。
 - [ ] 新增檢測 類別。
          路面分隔島反光導標磨損，光線不足，喪失警示功能，導致劉姓男大生視線不清，撞上分隔島當場摔車慘死 (https://goo.gl/Y7mK6D)
-- [ ] 依據出現的bounding boxes數目，建立評比分數。
+- [ ] 建立雲端系統:
+      123
+      456
 
 ## Youtube
 +  台灣大道(五權-河南) [[影片]](https://www.youtube.com/watch?v=dGdSBJNrWFo)
