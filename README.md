@@ -37,7 +37,7 @@
 0. 執行: 
     +  0.1  開啟 holes_dection_3classes.ipynb，直接執行。輸出在 資料夾 output。測試圖片在 ./o_input/ 。 
     +  0.2  開啟 holes_dection_4classes.ipynb，直接執行。輸出在 資料夾 output。測試圖片在 ./o_input/ 。
-    +  Android app下載點: https://drive.google.com/file/d/1-3t5ah_jvdjaUxvV9-OZA94B_ox8FR8F/view?usp=sharing
+    +  Android app下載點: https://goo.gl/6EWYY5
 1. 輸入檔案擺放位置:
      將要偵測的 影片或圖片 放到 資料夾 o_input (影片必須為mp4格式；圖片可以多張，必須為 '.jpg','.JPG','.png','JPEG' 格式)。
 2. 程式設定: 
