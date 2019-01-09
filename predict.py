@@ -56,7 +56,7 @@ def _main_(args):
                 break  # esc to quit
         cv2.destroyAllWindows()        
     elif input_path[-4:] == '.mp4': # do detection on a video  
-        video_out = output_path + input_path.split('/')[-1]
+        video_out = output_path + input_path.split('\\')[-1]
         video_reader = cv2.VideoCapture(input_path)
 
         nb_frames = int(video_reader.get(cv2.CAP_PROP_FRAME_COUNT))
@@ -122,7 +122,7 @@ def _main_(args):
             draw_boxes(image, boxes, config['model']['labels'], obj_thresh) 
      
             # write the image with bounding boxes to file
-            cv2.imwrite(output_path + image_path.split('/')[-1], np.uint8(image))         
+            cv2.imwrite(output_path + image_path.split('\\')[-1], np.uint8(image))
 
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser(description='Predict with a trained yolo model')

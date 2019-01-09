@@ -1,26 +1,26 @@
 {
     "model" : {
-        "min_input_size":       608,
-        "max_input_size":       608,
-        
-        "anchors":              [9,13, 10,7, 19,20, 38,36, 57,22, 90,81, 91,41, 144,67, 209,119],
-        "labels":               ["1_mediumcircle", "4_mediumsquare", "6_patch"],
+        "min_input_size":       416,
+        "max_input_size":       416,
+
+        "anchors":              [14,16, 20,46, 38,119, 45,19, 46,49, 97,27, 107,53, 125,89, 216,121],
+        "labels":               ["1_mediumcircle", "4_mediumsquare", "6_patch", "7_crack"]
     },
 
     "train": {
-        "train_image_folder":   "./kholes/images",
-        "train_annot_folder":   "./kholes/annots",
+        "train_image_folder":   "C:\\Users\\Tiger\\Downloads\\keras-yolo3-master\\kholes\\images\\",
+        "train_annot_folder":   "C:\\Users\\Tiger\\Downloads\\keras-yolo3-master\\kholes\\annots\\",
         "cache_name":           "holes.pkl",
 
         "train_times":          8,
-        "batch_size":           16,
+        "batch_size":           8,
         "learning_rate":        1e-4,
         "nb_epochs":            100,
         "warmup_epochs":        3,
         "ignore_thresh":        0.5,
-        
+
         " tiger ":  "***************************************",
-        "gpus":                 "0,1",			
+        "gpus":                 "0",
 
         "grid_scales":          [1,1,1],
         "obj_scale":            5,
@@ -29,9 +29,9 @@
         "class_scale":          1,
 
         "tensorboard_dir":      "logs",
-        
+
         " tiger ": "MODEL IS HERE. ************************",
-        "saved_weights_name":   "voc.h5", 
+        "saved_weights_name":   "holes.h5",
         "debug":                true
     },
 
